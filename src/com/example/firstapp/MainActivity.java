@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -15,7 +16,14 @@ public class MainActivity extends Activity {
     }
 
     public void calculate(View v){
-    	EditText num1text=(EditText)findViewById(R.id.num1text);
+    	EditText number1text = (EditText)findViewById(R.id.num1text);
+    	EditText number2text = (EditText)findViewById(R.id.num2text);
+    	Integer num1 = Integer.parseInt(number1text.getText().toString());
+    	Integer num2 = Integer.parseInt(number2text.getText().toString());
+    	Integer ans = num1 + num2;
+    	
+    	TextView answer = (TextView)findViewById(R.id.answertxt);
+
     }
     
     @Override
