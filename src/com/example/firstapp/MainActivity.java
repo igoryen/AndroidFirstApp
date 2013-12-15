@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     	Integer ans = num1 + num2;
     	
     	TextView answer = (TextView)findViewById(R.id.answertxt);
-
+    	answer.setText("Answer: " + ans.toString());
     }
     
     @Override
